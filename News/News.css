@@ -1,0 +1,258 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background:#FFF;
+	margin:0px;
+	
+	}
+ul,li{
+    list-style:none;
+	margin:0px;
+	padding:0px;
+	}
+#logo{
+	background:url(../images/container03_top_bg.jpg);
+	background-size: cover;
+	height:400px;
+	width:1300px;
+	margin:0px auto;
+	color:white;
+	
+	}
+#logo-head{
+	width:1300px;
+	height:70px;
+	line-height:70px;
+	margin-left:20px;
+	font-size:30px;
+	font-weight: bold;
+	}
+#logo-imge{
+	    width:600px;
+		margin-top:10px;
+		margin-left:50px;
+		height:300px;
+	    background:#FFF;
+		
+		float:left;
+	}
+#logo-neirong{
+	    width:600px;
+		margin:10px 0px;
+		height:300px;
+	    background:#FFF;
+		float:left;
+		color:black;
+	}
+#logo-neirong p{
+	    font-size:10px;
+		font-family:"微软雅黑";
+		float:left;
+		color:black;
+		
+	}
+#logo-neirong input{
+	width:100px;
+	margin:10px;
+	}
+#logo a{
+	color:white;
+	text-decoration:none;
+	}
+#logo #sc{
+	
+	float: right;
+	margin:10px;
+	}
+#nav{
+	
+	width:1300px;
+	height:80px;
+	background:;
+	margin:0px auto;
+	
+	}
+#nav ul{
+	
+	
+	}
+#nav ul li{
+	display:inline;
+	  
+	}
+#nav ul li a{
+	
+    color:black;
+	text-decoration:none;
+	font-size:20px;
+	font-family:"微软雅黑";
+	display:block;
+	float:right;
+	height:65px;
+	line-height:74px;
+	width:100px;
+	margin:5px 22px;
+	text-align:center;
+
+	}
+#nav ul li a:hover{
+	color:#FC0;
+	
+	}
+#span{
+	color:#F00;
+	}
+#main1{
+	width:1300px;
+	height:1150px;
+	margin:0px auto;
+	}
+#head{
+	width:1300px;
+	height:90px;
+	border:none;
+	background:#F9F9F9;
+	}
+#head input{
+	float:right;
+	margin:20px;
+	width:100px;
+	height:30px;
+	}
+#biaoti{
+	color:black;
+	font-size:30px;
+	font-weight: bold;
+	margin-left:40px;
+	margin-right:20px;
+	line-height:100px;
+	}
+#middle{
+	width:1300px;
+	background:#F9F9F9;
+	height:900px;
+	float:left;
+	}
+#main{
+	width:1300px;
+	background:#F9F9F9;
+	height:1060px;;
+}
+#main a{
+    text-decoration: none;
+	}
+#kuai{
+	margin-left:100px;
+	margin-top:15px ;
+	width:1100px;
+	height:150px;
+	background:#FFFF;
+	float:left;
+	}
+.title{
+	font-weight: bold;
+    width: 500px;
+    overflow: hidden;
+    float: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+	font-size:15px;
+	color:#333;
+	}
+.title:hover{
+	color: #5390CC;
+	}
+.wenzhang{
+	padding:30px;
+	width:100%;
+}
+.wenzhang img{
+	width:158px;
+	height:110px;
+	border:2px solid #999;
+	float:left;
+	margin-right:15px;
+}
+.neirong{
+	margin:5px;
+	font-weight: bold;
+    width: 500px;
+	height:45px;
+    overflow: hidden;
+    float: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+	font-size:11px;
+	color:#999;
+}
+.xiaobiaoti{
+	margin:20px;
+	font-size:10px;
+	color:#333;
+	
+}
+#lianxifangshi{
+	width:1300px;
+	height:252px;
+	background:#EAEAEA;
+	margin:0px auto;
+	background:url(../end.jpg);
+	}
+#lianjie{
+	width:850px;
+	height:150px;
+	float:left;
+	}
+#lie1{
+	width:180px;
+	height:150px;
+	float:left;
+	margin-left:30px;
+	line-height:50px;
+	}
+#lie1 h3{
+	margin-bottom:1px;
+	
+	}
+#lie1 p{
+	font-size:15px;
+	font-family:"微软雅黑";
+	margin:0px;
+	line-height:30px;
+	}
+#lie1 p a{
+	color:black;
+	text-decoration:none;
+	font-size:15px;
+	font-family:"微软雅黑";
+	}
+#lie1 h3 a{
+	color:black;
+	text-decoration:none;
+	}
+#erweima{
+	width:450px;
+	height:150px;
+	float:left;
+	}
+#tupian{
+	height:150;
+	margin-left:90px;
+	float:left;
+	}
+#tupian h4{
+	font-size:20px;
+	}
+#tupian{
+	height:150;
+	margin-left:90px;
+	float:left;
+	}
+#foot{
+	width:1300px;
+	height:50px;
+	background:#CFCFCF;
+	margin:0px auto;
+	text-align:center;
+	line-height:50px;
+	}

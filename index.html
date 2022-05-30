@@ -1,0 +1,213 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>建筑集团有限公司官网</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+  <div id="nav">
+  <ul>
+    <img src="images/logo.png">
+    <li><a href="Contact details/contact.html">联系我们</a></li>
+    <li><a href="enroll/enroll.html">注册页面</a></li>
+    <li><a href="News/News.html">新闻列表</a></li>
+    <li><a href="Official website.html">网站首页</a></li>
+   </ul>
+  </div>
+  <div class="container">
+        <!-- 显示出来第一张图片 -->
+        <img class="on" src="1.jpg"/>
+        <img src="5.jpg" />
+        <img src="6.jpg"/>
+        <img src="7.jpg"/>
+        <!-- 切换 -->
+        <div class="left"><</div>
+        <div class="right">></div>
+        <!-- 焦点 -->
+        <ul>
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <!--轮播图-->
+    <script type="text/javascript">
+        //1、找到container下的所有img标签,li标签,左右按钮
+        var aImgs = document.querySelectorAll('.container img');
+        var aLis = document.querySelectorAll('.container li');
+        var btnLeft = document.querySelector('.container .left');
+        var btnRight = document.querySelector('.container .right');
+        //点击事件
+        //点击按钮图片切换
+        var index = 0;        //当前图片下标
+        var lastIndex = 0;
+        btnRight.onclick = function(){
+            //记录上一张图片的下标
+            lastIndex = index;
+            //清除上一张图片的样式
+            aImgs[lastIndex].className = '';
+            aLis[lastIndex].className = '';
+            index++;
+            index %= aImgs.length;    //实现周期性变化
+            //设置当前图片的样式
+            aImgs[index].className = 'on';
+            aLis[index].className = 'active';
+        }
+        //左边按钮类似
+        btnLeft.onclick = function(){
+            //记录上一张图片的下标
+            lastIndex = index;
+            //清除上一张图片的样式
+            aImgs[lastIndex].className = '';
+            aLis[lastIndex].className = '';
+            index--;
+            if (index < 0) {
+                index = aImgs.length - 1;
+            }
+            //设置当前图片的样式
+            aImgs[index].className = 'on';
+        }
+		     aLis[index].className = 'active';
+		<!--自动轮播-->
+		var arr=new Array()
+            arr[0]="images/1.png";
+            arr[1]="images/2.png";
+            arr[2]="images/3.jpg";
+            var i=0;
+            function image()
+            {
+                var image=document.getElementById("tupian1");
+				
+                image.src=arr[i];
+                i++;
+                if(i>2){i=0};             
+            };
+            setInterval(function(){
+            image();
+            },2500);
+		 function Gimage(value)
+		    {
+			  var change = document.getElementById("zhongimge");
+			  if(value == 1)
+			  {
+				  change.src="2.jpg";
+			  }
+			  if(value == 2)
+			  {
+				  change.src="9.jpg";
+			  }
+			  if(value == 3)
+			  {
+				  change.src="10.jpg";
+			  }
+			  if(value == 4)
+			  {
+				  change.src="8.jpg";
+			  }
+		    }
+    </script>
+<div id="xinwen">
+ <div>
+  <span id="biaoti">新闻资讯</span><span>传递奋斗精神 彰显工作品质</span>
+  <h2 id="timu" class="timu">某某集团科技工作者张某荣获科技创新大赛一等奖</h2>
+  <h5 id="jianjie">5月份举行了某某公司第15届科技创新大赛，参赛的部门有人力资源部，科技创新部，人事部等10个部门</h5>
+  <hr />
+ </div> 
+  <div>
+    <div class="left1">
+       <img src="images/1.png" id="tupian1">
+    </div>
+    <div class="right1">
+          <a href="https://www.jzsbs.com/info.html?cid=15788"><p>中共中央办公厅、国务院办公厅印发《乡村建设行动实施方案》</p><span id="riqi">2022-5-25</span></a>
+          <a href="https://www.jzsbs.com/info.html?cid=15723"><p>国家卫健委：进一步要求各省以地级市为单位，常规建设或者改造一定数量的方舱医院</p><span id="riqi">2022-5-15</span></a>
+          <a href="https://www.jzsbs.com/info.html?cid=15720"><p>国家发改委等四部门联合发文：加大拖欠中小企业账款清理力度切实规范政府采购和招投标</p><span id="riqi">2022-5-14</span></a>
+          <a href="https://www.jzsbs.com/info.html?cid=15509"><p>国家统计局：2022年一季度全国建筑业总产值同比增长9.2％</p><span id="riqi">2022-4-20</span></a>
+          <a href="https://www.jzsbs.com/info.html?cid=15483"><p>国家发改委修订《气象基础设施中央预算内投资专项管理办法》</p><span id="riqi">2022-4-17</span></a>
+          <a href="https://www.jzsbs.com/info.html?cid=15464"><p>《中共中央国务院关于加快建设全国统一大市场的意见》发布</p><span id="riqi">2022-4-12</span></a>              
+    </div>
+  </div>
+</div>
+<div id="gongcheng">
+ <div id="head">
+ <span id="biaoti">工作展示</span><span>传递奋斗精神 彰显工作品质</span>
+ </div>
+ <div id="left1">
+  <ul>
+  <li><img src="images/fwjz.png"><input type="button" name="change" value="房屋建设" onClick="Gimage(1)"></li>
+  <li><img src="images/szgl.png"><input type="button" name="change" value="市政公路" onClick="Gimage(2)"></li>
+  <li><img src="images/jdaz.png"><input type="button" name="change" value="机电安装" onClick="Gimage(3)"></li>
+  <li><img src="images/zszx.png"><input type="button" name="change" value="装修装饰" onClick="Gimage(4)"></li>
+  </ul>
+ </div>
+ 
+ <div id="middle">
+  <img src="2.jpg" id="zhongimge">
+ </div>
+ 
+ <div id="right1">
+  <div id="guanggao">
+   广告
+  </div>
+  <h2 id="timu" >国际机场站</h2>
+  <p id="jianjie">&nbsp;&nbsp;&nbsp;&nbsp;机场距离市区约39公里，车程约40分钟。该机场巴士已通达市区主要车站及商业中心，并延伸到全省各地。目前，位于市区的机场快线乘车点已达到15个，另有12条机场专线延伸至周边地市。此外，为了让旅客拥有更加便利的出行体验，机场加大力度推进城市候机厅建设。</p>
+  <a href="https://baike.baidu.com/item/%E5%9B%BD%E9%99%85%E6%9C%BA%E5%9C%BA/81758"><input type="button" name="go" value="查看更多 >" id="chakan"></a>
+ </div>
+</div>
+<div id="jieshao">
+ 
+ <div id="lie">
+  <li><img src="images/logoys.jpg"><span>公司简介</span></li>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;该公司成立于2022年，位于河南省郑州市，是一家集室内外设计、预算、施工、材料于一体的专业化建筑装饰公司，公司从事装饰装修行俯护碘咎鄢侥碉鞋冬猫业多年，有一批独立的专业化的施工队伍，确保施工绿色环保，安全文明。</p>
+ </div>
+ 
+ <div id="lie">
+ <li><img src="images/qywh.jpg"><span>企业文化</span></li>
+ <p>诚实守信<br>效益至尊<br>依法经营<br>合作共赢</p>
+ </div>
+ 
+ <div id="lie">
+ <li><img src="images/fzlc.jpg"><span>组织结构</span></li>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;该公司的部门，内部分明，各部门分工详细，各部门领导层相互制约管理</p>
+ </div>
+ <div id="lie">
+  <li><img src="images/gsry.jpg"><span>公司资质</span></li>
+ <p>&nbsp;&nbsp;&nbsp;&nbsp;该公司内部员工都有着较高的学历和工作经验，其次公司内部有更先进更专业的设备</p>
+ </div>
+</div>
+<div id="lianxifangshi">
+ <div id="lianjie">
+ <div id="lie1">
+ <h3>公司介绍</h3>
+ <p><a href="Official website.html">公司主页</a></p>
+ <p><a href="News/News.html">新闻页</a></p>
+ </div>
+ <div id="lie1">
+ <h3>工程类别</h3>
+ <p>工业建筑<br>农业建筑<br>商业建筑<br>交通建筑</p>
+ </div>
+ <div id="lie1">
+ <h3>人才招聘</h3>
+ <p>本科以上：<br>精于勘察设计<br>掌握建筑施工<br>设备安装</p>
+ </div>
+ <div id="lie1">
+ <h3><a href="Contact details/contact.html">联系我们</a></h3>
+ </div>
+ </div>
+ <div id="erweima">
+  <div id="tupian">
+  <h4>官方微信</h4>
+  <img src="3.jpg">
+  </div>
+  <div id="tupian">
+  <h4>客服微信</h4>
+  <img src="4.jpg">
+  </div>
+ </div>
+</div>
+<div id="foot">
+@@@@该页面内容部分为网上选取，如有侵权，请见谅
+</div>
+</body>
+</html>

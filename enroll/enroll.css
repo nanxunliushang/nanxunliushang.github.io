@@ -1,0 +1,242 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background:#FFF;
+	margin:0px;
+	
+	}
+ul,li{
+    list-style:none;
+	margin:0px;
+	padding:0px;
+	}
+#logo{
+	background:url(../images/container03_top_bg.jpg);
+	background-size: cover;
+	height:300px;
+	width:1300px;
+	margin:0px auto;
+	color:white;
+	font-weight: bold;
+	font-size:55px;
+	text-align:center;
+	line-height:300px;
+	}
+#logo a{
+	color:white;
+	text-decoration:none;
+	}
+#logo #sc{
+	
+	float: right;
+	margin:10px;
+	}
+#nav{
+	
+	width:1300px;
+	height:80px;
+	background:;
+	margin:0px auto;
+	
+	}
+#nav ul{
+	
+	
+	}
+#nav ul li{
+	display:inline;
+	  
+	}
+#nav ul li a{
+	
+    color:black;
+	text-decoration:none;
+	font-size:20px;
+	font-family:"微软雅黑";
+	display:block;
+	float:right;
+	height:65px;
+	line-height:74px;
+	width:100px;
+	margin:5px 22px;
+	text-align:center;
+
+	}
+#nav ul li a:hover{
+	color:#FC0;
+	
+	}
+#waikuang{
+	border:3px #F9F9F9 solid;
+	margin:0px auto;
+	height:700px;
+	width:1300px;
+}
+#main{
+	
+	border:2px #FFF solid;
+	width:800px;
+	height:500px;
+	margin:0px auto;
+	margin-top:50px;
+	margin-left:300px;
+	
+}
+#main label{
+	color:#057474;
+	font-size:14px;
+	font-weight:bolder;
+}
+.tishi{
+	 font-size:10px;
+	 color:#FF7575;
+	 background:#FFF;
+	 border:none;
+	}
+#liangzi{
+	margin-left:28px;
+	}
+#liangzi span{
+		color:#000;
+	}
+#sanzi{
+	margin-left:14px;
+	}
+#sanzi span{
+		color:#000;
+	}
+#sizi span{
+		color:#000;
+	}
+#duiqi{
+	margin-left:98px;
+	}
+#main input{
+	margin-bottom:30px;
+	height:25px;
+	}
+#startTime {
+	background:url(../images/4.png) no-repeat;
+	height:23px;
+	}
+.zuihou2{
+	margin-left:180px;
+	color:#008000;
+	font-size:16px;
+	font-weight:bolder;
+	font-family:"黑体";
+}
+#ziti{
+	color:#057474;
+	font-size:14px;
+	font-weight:bolder;
+	}
+#aihao{
+	margin-top:20px;
+	}
+#aihao input{
+	width:20px;
+	border-radius:25px;
+	}
+#button1{
+	margin-left:120px;
+	width:90px;
+	height:30px;
+	font-size:15px;
+	text-align:center;
+	}
+#button2{
+	margin-left:70px;
+	width:90px;
+	height:30px;
+	font-size:15px;
+	text-align:center;
+	}
+#jieshao{
+	width:1300px;
+	height:200px;
+	margin:0px auto;
+    background:#603;
+	}
+#lie{
+	width:25%;
+	height:200px;
+	background:#FFF;
+    float:left;
+	}
+#lie img{
+	float:left;
+	margin:10px;
+	}
+#lie span{
+	margin:30px 10px;
+	float:left;
+	font-size:20px;
+	font-weight: bold;
+	}
+/*页面总结栏*/
+#lianxifangshi{
+	width:1300px;
+	height:252px;
+	background:#EAEAEA;
+	margin:0px auto;
+	background:url(../end.jpg);
+	}
+#lianjie{
+	width:850px;
+	height:150px;
+	float:left;
+	}
+#lie1{
+	width:180px;
+	height:150px;
+	float:left;
+	margin-left:30px;
+	line-height:50px;
+	}
+#lie1 h3{
+	margin-bottom:1px;
+	
+	}
+#lie1 p{
+	font-size:15px;
+	font-family:"微软雅黑";
+	margin:0px;
+	line-height:30px;
+	}
+#lie1 p a{
+	color:black;
+	text-decoration:none;
+	font-size:15px;
+	font-family:"微软雅黑";
+	}
+#lie1 h3 a{
+	color:black;
+	text-decoration:none;
+	}
+#erweima{
+	width:450px;
+	height:150px;
+	float:left;
+	}
+#tupian{
+	height:150;
+	margin-left:90px;
+	float:left;
+	}
+#tupian h4{
+	font-size:20px;
+	}
+#tupian{
+	height:150;
+	margin-left:90px;
+	float:left;
+	}
+#foot{
+	width:1300px;
+	height:50px;
+	background:#CFCFCF;
+	margin:0px auto;
+	text-align:center;
+	line-height:50px;
+	}
